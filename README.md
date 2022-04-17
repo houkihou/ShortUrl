@@ -32,7 +32,7 @@
 
 #### 演示地址
 
-https://ulmt.com/s/
+https://bofar.com/s
 
 
 #### 伪静态的使用
