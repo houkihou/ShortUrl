@@ -7,31 +7,32 @@
 
 #### 使用说明
 
-1、将所有文件复制到你的项目中。比方放到https://xxx.com/的根目录
+1、将所有文件复制到你的项目中。
+ 比方你的短网址域名为https://xxx.com/ ，那么放到https://xxx.com/ 对应的的目录
 
-2、urls123.php和urlsabc.php文件需设置为777权限，短缩网站地址存放在该文件中
+2、urls123.php和urlsabc.php文件需设置为777权限
+ 短缩网站地址会存放在该文件中，所以需要读写权限
 
 3、修改config.php
 
 ```html
-'title' => "短网址生成",                     //网站标题
-'site' => "https://xxx.com/",  //你的短网址域名
-//不允许缩短的域名，单个匹配，*表示所有的二级域名
-'blackList' => array('*.baidu1.com','youtube1.com'),
-'key' => "idjl",                             //token 使用的密钥
+'title' => "短网址生成",                               //网站标题
+'site' => "https://xxx.com/",                         //你的短网址域名
+'blackList' => array('*.baidu1.com','youtube1.com'),  //不允许缩短的域名，单个匹配，*表示所有的二级域名
+'key' => "idjl",                                      //token 使用的密钥
 
 //根据需求修改
-'use_rewrite' => 1,                          // 是否使用伪静态,默认使用
+'use_rewrite' => 1,                                   // 是否使用伪静态,默认使用
 //生成的短网址类型：abc表示字母数字混合，123为纯数字累加方式
 'type' => 'abc',
 ```
 
-4、访问你设置的短网址域名：https://xxx.com/
+4、访问你的短网址域名：https://xxx.com/
 
 
 #### 演示地址
 
-https://www.bofar.com/s
+https://ulmt.com/s/
 
 
 #### 伪静态的使用
